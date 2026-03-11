@@ -5,7 +5,7 @@ import menu.Menu
 import java.util.Scanner
 
 fun showNotesMenu(archive: Archive) {
-    val scanner = Scanner(System.`in`)
+    val scanner = Scanner(System.`in`) //
 
     while (true) {
         val menu = Menu("Заметки архива \"${archive.name}\"")
