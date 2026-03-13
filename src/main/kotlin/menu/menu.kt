@@ -33,8 +33,7 @@ class Menu(
                 continue
             }
 
-            items[choice - 1].second.invoke() //
-            return
+            items[choice - 1].second.invoke() /
         }
     }
 }

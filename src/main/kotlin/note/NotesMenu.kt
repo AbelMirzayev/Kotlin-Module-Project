@@ -37,7 +37,7 @@ fun showNotesMenu(archive: Archive) {
         }
 
         menu.addItem("Назад") {
-            return@addItem
+            return@showNotesMenu
         }
 
         menu.show()
