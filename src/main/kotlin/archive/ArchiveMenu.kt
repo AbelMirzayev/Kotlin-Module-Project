@@ -10,7 +10,7 @@ fun showArchiveMenu() {
     val scanner = Scanner(System.`in`)
 
     while (true) {
-        val menu = Menu("Список архивов")
+        val menu = Menu("Список архивов:")
 
         menu.addItem("Создать архив") {
             print("Введите название архива: ")

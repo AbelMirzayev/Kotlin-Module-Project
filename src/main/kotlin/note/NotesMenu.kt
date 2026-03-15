@@ -5,9 +5,10 @@ import menu.Menu
 import java.util.Scanner
 
 fun showNotesMenu(archive: Archive) {
-    val scanner = Scanner(System.`in`) //
+    val scanner = Scanner(System.`in`)
+    var exit = false
 
-    while (true) {
+    while (!exit) {
         val menu = Menu("Заметки архива \"${archive.name}\"")
 
         menu.addItem("Создать заметку") {
@@ -37,7 +38,7 @@ fun showNotesMenu(archive: Archive) {
         }
 
         menu.addItem("Назад") {
-            return@showNotesMenu
+            exit = true
         }
 
         menu.show()
